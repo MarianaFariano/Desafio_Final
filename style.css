@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;700;800&display=swap');
 *{
     margin: 0%;
     padding: 0%;
@@ -7,29 +8,52 @@ header{
     width: 100%;
     height: 15vh;
     display: flex;
-    border: solid black;
+   
+}
+#btn-mobile{
+    display: none;
+}
+h1{
+    font-family: 'Montserrat', sans-serif;
+    margin: 2rem;
 }
 .navBar{
     width: 88%;
-   display: flex;
-   justify-content: flex-end;
-   border: solid rgb(1, 247, 1);
+    display: flex;
+    justify-content: flex-end;
+   
 }
 .listItem{
+    width: 31rem;
     display: flex;
     align-items: center;
 }
 .item{
+    width: 7rem;
     display: flex;
-    width: 6rem;
     list-style: none;
-    border: solid rgb(141, 95, 170);
+    font-size: 1.3rem;
+    font-family: 'Montserrat', sans-serif;
+   
 }
 
+.item:hover{
+    color: black;
+    font-size: 1.5rem;
+}
 
-
-
-
+@media(min-width:201px) and (max-width: 500px){
+    .navBar{
+    display: none;
+  }
+h1{
+    font-size: 1.6rem;
+}
+    #btn-mobile{
+        display: block;
+    }
+}
+   
 
 
 
